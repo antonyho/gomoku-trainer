@@ -13,7 +13,7 @@ activate_venv: venv
 
 .PHONY: install
 install: activate_venv requirements.txt
-	pip install -r requirements.txt
+	pip install --no-cache-dir -r requirements.txt
 
 .PHONY: deps_freeze
 deps_freeze: activate_venv

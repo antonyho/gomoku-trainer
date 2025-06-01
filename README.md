@@ -19,8 +19,8 @@ Since the game Gomoku requires sequential decision making, instead of understand
 CNN policy can be used for training the model with the 2D board game policy.
 
 ### Reinforcement Learning Gymnasium
-#### [PettingZoo](https://pypi.org/project/pettingzoo/)
-The PettingZoo gymnasium can provide the OpenAI Gym environment for the PPO to perform reinforced training.
+#### [gym-gomoku](https://github.com/rockingdingo/gym-gomoku)
+The gym-gomoku gymnasium can provide the OpenAI Gym environment for the PPO to perform reinforced training.
 
 ### Training Dataset
 #### Self-play
@@ -29,3 +29,9 @@ The PPO can play against itself as training data using the PettingZoo gym.
 
 
 [^1]: Proximal Policy Optimization Algorithms (https://arxiv.org/abs/1707.06347)
+
+
+
+## Usage
+### Dependencies
+[Dependenies for this project](./deps.md)

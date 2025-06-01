@@ -12,7 +12,10 @@ Install the packages if `pip install -r requirements.txt` doesn't work for you.
 `pip install huggingface-hub`
 
 #### PettingZoo for providing OpenAI Gym for the reinforced training
-`pip install 'pettingzoo[classic]'`
+```
+pip install pettingzoo
+pip install 'pettingzoo[classic]'
+```
 
 #### The PPO algorithm used for reinforcement training
 `pip install stable-baselines3`

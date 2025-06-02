@@ -15,7 +15,7 @@ model_path = hf_hub_download(repo_id=pretrained_model_repo, filename=pretrained_
 model = PPO.load(model_path)
 
 # Set up Gomoku environment
-env = gym.make('Gomoku19x19-v0')
+env = gym.make('Gomoku19x19-v0', disable_env_checker=True)
 
 # Fine-tune the model
 model = PPO("CnnPolicy", env, verbose=1, learning_rate=3e-4)

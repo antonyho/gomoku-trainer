@@ -15,8 +15,8 @@ Gomoku, also known as Five in a Row, is a classic strategy board game where play
 ### Pre-trained Model
 #### `stable-baselines3/ppo-CartPole-v1` [PPO](https://spinningup.openai.com/en/latest/algorithms/ppo.html) Algorithm[^1]
 Since the game Gomoku requires sequential decision making, instead of understanding the context of a topic. A reinforcement learning model is more suitable. Pre-trained model like [`stable-baselines3/ppo-CartPole-v1`](https://stable-baselines3.readthedocs.io/en/master/modules/ppo.html) is a suitable option to be retrained for Gomoku.
-#### [CNN](https://stable-baselines3.readthedocs.io/en/master/modules/ppo.html#stable_baselines3.ppo.CnnPolicy) Policy
-CNN policy can be used for training the model with the 2D board game policy.
+#### [MLP](https://stable-baselines3.readthedocs.io/en/master/modules/ppo.html#stable_baselines3.ppo.MlpPolicy) Policy
+MLP policy can be used for training the model.
 
 ### Reinforcement Learning Gymnasium
 #### [gym-gomoku](https://github.com/rockingdingo/gym-gomoku)

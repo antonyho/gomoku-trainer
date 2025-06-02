@@ -27,11 +27,29 @@ The gym-gomoku gymnasium can provide the OpenAI Gym environment for the PPO to p
 The PPO can play against itself as training data using the PettingZoo gym.
 
 
+## Usage
+### Local Environment
+#### Dependencies
+[Dependenies for this project](./deps.md)
+
+#### Build
+`make`
+
+#### Train
+`make training`
+
+### Docker Image
+#### Build
+```
+docker build --tag gomoku-trainer .
+```
+
+#### Train
+```
+docker run gomoku-trainer:latest
+```
+
+
 
 [^1]: Proximal Policy Optimization Algorithms (https://arxiv.org/abs/1707.06347)
 
-
-
-## Usage
-### Dependencies
-[Dependenies for this project](./deps.md)

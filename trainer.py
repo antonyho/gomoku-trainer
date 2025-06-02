@@ -20,7 +20,7 @@ env = gym.make('Gomoku19x19-v0', disable_env_checker=True)
 # Fine-tune the model
 model = PPO("MlpPolicy", env, verbose=1)
 model.learn(total_timesteps=100000)
-model.save(reinforced_model_name)
+model.save(reinforced_model_filename)
 
 # Upload to Hugging Face Hub
 # login()  # Hugging Face token

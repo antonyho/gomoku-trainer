@@ -1,2 +1,6 @@
-*.*/*.md
+.git/
+.vscode/
+**/*.md
 venv
+.gitignore
+.dockerignore

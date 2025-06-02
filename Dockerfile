@@ -2,7 +2,7 @@ FROM python:3.12 AS build
 
 WORKDIR /app
 COPY . /app
-RUN make install
+RUN make
 
 
 FROM python:3.12-alpine

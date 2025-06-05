@@ -1,6 +1,4 @@
 import pyspiel
-from open_spiel.python import games  # pylint: disable=unused-import
-from open_spiel.python.mfg import games as mfgs  # pylint: disable=unused-import
 from open_spiel.python.algorithms.alpha_zero import alpha_zero
 
 trained_model_filename = "gomoku_az_model"
@@ -16,7 +14,7 @@ def main():
     # Gomoku via MNK in OpenSpiel
     game = pyspiel.load_game("mnk", {'m': board_size, 'n': board_size, 'k': 5})
     config = alpha_zero.Config(  # Train with AlphaZero and TensorFlow
-        game=game,
+        game=f"mnk(m={board_size},n={board_size},k=5)",
         path=trained_model_filename,
         learning_rate=0.001,
         weight_decay=1e-4,

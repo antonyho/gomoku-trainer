@@ -47,7 +47,11 @@ def main():
 
         quiet=False,
     )
-    alpha_zero.alpha_zero(config)
+    try:
+        alpha_zero.alpha_zero(config)
+    except Exception as e:
+        print(f"Error:\n{e}")
+        raise
 
 
 if __name__ == "__main__":
